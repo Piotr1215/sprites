@@ -1,4 +1,4 @@
-sprite $l_logo [200x200/16] {
+sprite $alibaba_logo [200x200/16] {
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
@@ -201,9 +201,9 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 }
 
-!define L_LOGO-ALIBABA-CLOUD-SQUARE(_color)                                 SPRITE_PUT(                                               l_logo-alibaba-cloud-square, _color)
-!define L_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale)                         SPRITE_PUT(                                               l_logo-alibaba-cloud-square, _color, _scale)
-!define L_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale, _alias)                 SPRITE_ENT(  _alias, L LOGO-ALIBABA-CLOUD-SQUARE,         l_logo-alibaba-cloud-square, _color, _scale)
-!define L_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, L LOGO-ALIBABA-CLOUD-SQUARE,         l_logo-alibaba-cloud-square, _color, _scale, _shape)
-!define L_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, L LOGO-ALIBABA-CLOUD-SQUARE, _label, l_logo-alibaba-cloud-square, _color, _scale, _shape)
-skinparam folderBackgroundColor<<L LOGO-ALIBABA-CLOUD-SQUARE>> White
+!define ALIBABA_LOGO-ALIBABA-CLOUD-SQUARE(_color)                                 SPRITE_PUT(                                                     alibaba_logo-alibaba-cloud-square, _color)
+!define ALIBABA_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale)                         SPRITE_PUT(                                                     alibaba_logo-alibaba-cloud-square, _color, _scale)
+!define ALIBABA_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale, _alias)                 SPRITE_ENT(  _alias, ALIBABA LOGO-ALIBABA-CLOUD-SQUARE,         alibaba_logo-alibaba-cloud-square, _color, _scale)
+!define ALIBABA_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, ALIBABA LOGO-ALIBABA-CLOUD-SQUARE,         alibaba_logo-alibaba-cloud-square, _color, _scale, _shape)
+!define ALIBABA_LOGO-ALIBABA-CLOUD-SQUARE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, ALIBABA LOGO-ALIBABA-CLOUD-SQUARE, _label, alibaba_logo-alibaba-cloud-square, _color, _scale, _shape)
+skinparam folderBackgroundColor<<ALIBABA LOGO-ALIBABA-CLOUD-SQUARE>> White
