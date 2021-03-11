@@ -13,6 +13,11 @@ Custom sprites for plantuml diagrams
 - use [create_sprites.sh](create_sprites.sh) to generate sprites
 - reference sprites in your *plantuml* diagram like so:
 
+## Alternative flow
+
+- if svg image: `inkscape -z -e out.png -w 100 -h 100 in.svg`
+- use plantuml command line to encode: `plantuml --encodesprite 16 out.puml"`
+
 `!include https://raw.githubusercontent.com/Piotr1215/sprites/master/rest-api.puml`
 
 ## Logos
