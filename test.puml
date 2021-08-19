@@ -1,5 +1,5 @@
 @startuml test
 !include falco.puml
 
-rectangle "<$cks_falco>a"
+folder "<$cks_falco>"
 @enduml
