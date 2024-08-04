@@ -1,5 +1,22 @@
 @startuml test
+!include ika.puml
+!include crossplane.puml
 !include falco.puml
+!include helm.puml
+!include ika.puml
+!include language_markdown.puml
+!include logo-alibaba.puml
+!include okteto.puml
+!include rest-api.puml
+!include skaffold250.puml
 
-folder "<$cks_falco>"
+folder "<$crossplane>"
+folder "<$falco>"
+folder "<$helm>"
+folder "<$kube>"
+folder "<$language_markdown>"
+folder "<$logo-alibaba>"
+folder "<$okteto>"
+folder "<$rest-api>"
+folder "<$skaffold250>"
 @enduml
