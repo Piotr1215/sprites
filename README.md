@@ -17,7 +17,7 @@ Custom sprites for plantuml diagrams
 
 ## Alternative flow
 
-- if svg image: `inkscape -z -e out.png -w 100 -h 100 in.svg`
+- if svg image: `inkscape --export-type=png --export-filename=out.png -w 100 -h 100 in.svg` (Inkscape 0.92: `inkscape -z -e out.png -w 100 -h 100 in.svg`)
 - use plantuml command line to encode: `plantuml --encodesprite 16 out.puml"`
 
 ## Logos
