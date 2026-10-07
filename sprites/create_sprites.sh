@@ -127,11 +127,23 @@ main () {
 #
 ########################################
 process_svg () {
+    # Inkscape 1.0 deprecated -z and --export-png, 0.92 lacks their replacements
+    if inkscape --version 2>/dev/null | grep -q '^Inkscape 0\.'
+    then
+        exportopts=(-z)
+        exportflag=--export-png
+    else
+        exportopts=(--export-type=png)
+        exportflag=--export-filename
+    fi
+
     for i in *.svg
     do
         [ -f "$i" ] || continue
 
-        inkscape -z --export-png=`echo $i | sed -e 's/svg$/png/' | sed 's/[^a-zA-Z0-9._]/_/g'` -w $width -h $height -b white $i
+        png=$(echo "$i" | sed -e 's/svg$/png/' | sed 's/[^a-zA-Z0-9._]/_/g')
+
+        inkscape "${exportopts[@]}" "$exportflag=$png" -w "$width" -h "$height" -b white "$i"
     done
 }
 
